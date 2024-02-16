@@ -1,6 +1,5 @@
-# --web true
+#--web true
 import json
-
 
 def main(_):
     data = {

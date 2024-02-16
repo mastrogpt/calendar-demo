@@ -3,13 +3,31 @@ let token;
 let calendarEvents;
 let htmlEvents;
 
-//TODO dot env
-const config = {
-  clientId:
-    "50639526067-dma0d7nqjeof22hboq3cv5j5e8kc0g75.apps.googleusercontent.com",
-  redirectUri: "https://antoniopiga.nuvolaris.dev/",
+let config = {
+  clientId: "",
+  redirectUri: ""
 };
 
+(async () => {
+  await populateConfig();
+})();
+
+
+async function populateConfig() {
+  try {
+    const response = await fetch(location.href.replace(/index\.html$/, "") + "api/my/google/config");
+    const data = await response.json();
+    console.log("DATA IS", data);
+    config.clientId = data.client_id;
+    config.redirectUri = data.redirect_uri;
+  } catch (error) {
+    console.error('Error during fetching and parsing data:', error);
+  }
+}
+
+
+
+console.log("CONFIG", config)
 
 document.addEventListener("DOMContentLoaded", async function () {
   try {

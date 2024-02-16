@@ -73,9 +73,9 @@ def main(args):
     input = args.get("input", "")
     if input == "":
         res = {
-            "output": "Welcome to the OpenAI demo chat",
-            "title": "OpenAI Chat",
-            "message": "You can chat with OpenAI."
+            "output": "Welcome to the OpenAI-Google Calendar demo chat",
+            "title": "OpenAI Calendar Chat",
+            "message": "You can chat with OpenAI to ask your today google calendar events."
         }
     else:
         output = ask(input)

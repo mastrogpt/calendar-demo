@@ -156,8 +156,5 @@ tasks:
             done
             echo "**************************************************************************************"
             echo "*** Type 'deploy' to deploy your app to https://$NUVDEV_USERNAME.nuvolaris.dev"
-            echo "*** Type 'devel'  to start incremental development mode"
+            echo "*** Remember to ask Nuvolaris team to whitehost your base url: https://$NUVDEV_USERNAME.nuvolaris.dev in order to use googleauth ****"
             echo "**************************************************************************************"
-
-
-
