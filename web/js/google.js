@@ -7,7 +7,7 @@ let htmlEvents;
 const config = {
   clientId:
     "50639526067-dma0d7nqjeof22hboq3cv5j5e8kc0g75.apps.googleusercontent.com",
-  redirectUri: "https://zany-dollop-59x95qxx4q7cqgj-8080.app.github.dev/",
+  redirectUri: "https://antoniopiga.nuvolaris.dev/",
 };
 
 
