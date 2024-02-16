@@ -27,11 +27,11 @@ class Invoker {
   async invoke(msg) {
     // welcome message no input
     if (msg == null) {
-      return "Welcome, you have selected " + this.name;
+      return "Welcome, you are on calendar demo starter, powered by MastroGPT"
     }
     // no url 
     if (this.url == null)
-      return "Welcome, please select the chat application you want to use by clicking a  button on top.";
+      return "Welcome, please select the calendar application by clicking the button on top.";
     // prepare a request
     let json;
     if(this.url.includes('/google/human_events')) {
